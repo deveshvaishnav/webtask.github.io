@@ -255,14 +255,15 @@ ul {
 .cta-banner {
   background: linear-gradient(25deg, #d64c7f, #ee4758 100%);
   color: #f4f4f4;
-  padding: 6rem 2rem;
+  /* padding: 10rem 3rem; */
   box-shadow: 5px 5px 10px #000000;
-  padding-top: 1rem;
+  display: flex;
 }
 .cta-banner-left {
   float: left;
 }
 .cta-banner-right {
+  padding-top: 1.5rem;
   float: right;
 }
 .cta-line {
@@ -386,5 +387,32 @@ ul {
 
   .row1 .img-box {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+  }
+  .cta-banner {
+    flex-direction: column;
+  }
+  .cta-banner-left,
+  .cta-banner-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-wrapper .company-address {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .form-wrapper .form {
+    font: none;
+    width: 100%;
+    height: auto;
   }
 }
